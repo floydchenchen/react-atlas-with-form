@@ -1,0 +1,82 @@
+@import '../Button/Button.css';
+@import '../styles/variables.css';
+
+.base {
+    border-style: none;
+    border-top: 1px solid #eee !important; /* Important designation needed to overwrite Button styling in prod build */
+}
+
+.subNav {
+    height: 40px;
+    transition: height .3s ease-in-out;
+}
+
+.subNav.collapsed {
+    height: 0;
+}
+
+.navItem button {
+    width: 100%;
+    border-color: var(--silver);
+    border-left: solid 5px transparent;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-align: left;
+    color: var(--dark-gray);
+    background-color: var(--white);
+}
+
+.subNav button {
+    padding-left: 38px;
+}
+
+.subNav.collapsed button {
+    display: none;
+}
+
+.navItem button:hover {
+    background-color: var(--silver);
+    color: var(--dark-gray);
+}
+
+.navItem button:focus {
+    outline: none;
+}
+
+.active > button, .active > a > button {
+    border-left-color: var(--blue);
+    background-color: var(--silver);
+    color: var(--blue);
+}
+
+.caret::before {
+    content: "";
+    border: solid var(--blue);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+
+.caret {
+    position: relative;
+    width: 18px;
+    height: 10px;
+    vertical-align: middle;
+    float: right;
+    clear: right;
+    border-color: var(--dark-gray);
+    transform: none;
+    margin: 5px 0 0;
+    transition: transform .3s;
+    top: -2px;
+}
+
+
+.collapsed .caret {
+    transform: rotate(90deg);
+}

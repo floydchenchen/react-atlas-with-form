@@ -1,0 +1,15 @@
+.overlay {
+	composes: bg-black from '../styles.css';
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.overlay.active {
+	opacity: 0.6;
+	pointer-events: all;
+}

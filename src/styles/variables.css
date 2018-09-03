@@ -1,0 +1,122 @@
+/*media query breaks*/
+/*might take this out, as i think we want a col/row component instead...not sure*/
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+:root {
+  /* Primary Theme Colors */
+  --primary:                    var(--primary-blue);
+  --primary-darker:             var(--primary-blue-darker);
+  --secondary:                  var(--secondary-blue);
+  --secondary-darker:           var(--secondary-blue-darker);
+  --default:                    var(--dark-gray);
+  --default-lighter:            var(--primary-gray-lighter);
+
+  --error:              var(--red);
+  --error-darker:       var(--red-darker);
+  --warning:            var(--orange);
+  --warning-darker:     var(--orange-darker);
+  --success:            var(--primary-green);
+  --info:               var(--primary-blue);
+  --alert:              var(--red);
+
+  /* Blue */
+  --primary-blue:          var(--sky-blue);
+  --primary-blue-darker:   var(--sky-blue-darker);
+  --secondary-blue:        var(--blue);
+  --secondary-blue-darker: var(--midnight);
+  --aqua:                  #7FDBFF;
+  --powder-blue:           #B6E8FB;
+  --teal:                  #39CCCC;
+  --sky-blue:              #00A7E1;
+  --sky-blue-darker:       #0081AE;
+  --blue:                  #003058;
+  --navy:                  #001F3F;
+  --midnight:              #001425;
+  
+  /* Cool */
+  --primary-green:        var(--light-green);
+  --primary-green-darker: var(--kelly-green);
+  --lime:                 #01FF70;
+  --light-green:          #A8C628;
+  --green:                #B2D23C;
+  --kelly-green:          #81B315;
+  --olive:                #3D9970;
+  
+  /* Warm */
+  --yellow:       #FFDC00;
+  --orange:       #FF5B00;
+  --orange-darker: #E24024;
+  --red:          #DE2525;
+  --red-darker:   #BF2222;
+  --fuchsia:      #F012BE;
+  --purple:       #B10DC9;
+  --gold:         #E1C900;
+  --maroon:       #85144B;
+
+    /* Gray scale */
+  --primary-gray:              var(--silver);
+  --primary-gray-lighter:      var(--gray);
+  --primary-gray-border:       var(--gray);
+  --white:                     #FFF;
+  --silver:                    #E9E9E9;
+  --gray:                      #BEBEBE;
+  --light-gray:                #CCC;
+  --med-gray:                  #999;
+  --dark-gray:                 #666;
+  --charcoal:                  #333;
+  --black:                     #111;
+
+  /*standard variables*/
+  --font-family: 'MrEavesXLModOT', Arial, Helvetica, sans-serif;
+  --body-font-family: Arial, Helvetica, sans-serif;;
+  --font-size: 14px;
+  --header-font-size: 16px;
+  --line-height: 1.5;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+  --bold-font-weight: bold;
+  --space-0-25: .25rem;
+  --space-1:    .5rem;
+  --space-1-1:  .625rem;
+  --space-1-2:  .75rem;
+  --space-2:    1rem;
+  --space-3:    2rem;
+  --space-4:    4rem;
+  --form-field-font-size: 1rem;
+  --form-field-height: 2.25rem;
+  --form-field-padding-y: .5rem;
+  --form-field-padding-x: .5rem;
+  --button-font-size: inherit;
+  --button-font-weight: normal;
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+  --button-padding: 0.625rem 1.125rem 0.5rem;
+  --container-width: 64em;
+
+  --darken-1: rgba(0,0,0,.0625);
+  --darken-2: rgba(0,0,0,.125);
+  --darken-3: rgba(0,0,0,.25);
+  --darken-4: rgba(0,0,0,.5);
+
+  --lighten-1: rgba(255,255,255,.0625);
+  --lighten-2: rgba(255,255,255,.125);
+  --lighten-3: rgba(255,255,255,.25);
+  --lighten-4: rgba(255,255,255,.5);
+
+  --default-border-width: 1px; /* using rem measurements for border sizes was causing issues with chrome v.62 */
+  --default-border-color:   var(--light-gray);
+  --border-width: 1px;
+  --button-border-width: .1rem;
+  --border-radius: .1rem;
+  --border-color: var(--med-gray);
+}

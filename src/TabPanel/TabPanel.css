@@ -1,0 +1,22 @@
+@import '../styles/variables.css';
+
+.tabPanel {
+  display: none;
+}
+
+.selected {
+  display: block;
+}
+
+.bordered {
+  border: 1px solid var(--gray);
+  border-top: none;
+  padding: 1rem;
+}
+
+.vertical {
+  flex-grow: 8;
+  border: 1px solid var(--gray);
+  border-left: none;
+  padding: 1rem;
+}

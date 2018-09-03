@@ -1,0 +1,4 @@
+@import '../styles/variables.css';
+.column:hover {
+  background-color: var(--silver);
+}

@@ -1,0 +1,15 @@
+build
+lib
+node_modules
+npm-debug.log
+.idea
+.vscode
+styleguide
+.npmrc
+jsconfig.json
+lerna-debug.log
+coverage
+packages/react-atlas/src/components/
+atlas.config.js
+*reports/
+*.DS_Store

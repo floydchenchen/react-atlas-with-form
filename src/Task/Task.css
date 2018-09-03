@@ -1,0 +1,40 @@
+@import '../styles/variables.css';
+.task {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.taskLink {
+	composes: default-font from '../styles.css';
+	composes: dark-gray from '../styles.css';
+  	font-size: 19px;
+	line-height: 27px;
+	text-decoration:none;
+	padding-right: 45px;
+	padding-left: 45px;
+	padding-top: 11.5px;
+	padding-bottom: 11.5px;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+}
+
+.taskLink:hover {
+	color: var(--primary);
+}
+
+.selected {
+	composes: primary from '../styles.css';
+	cursor: default;
+}
+
+.borderTop {
+	composes: taskbar-border-top from '../styles.css';
+}
+
+.icon-left {
+  	margin-right: 0.25rem;
+  	vertical-align: middle;
+}

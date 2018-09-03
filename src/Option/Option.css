@@ -1,0 +1,16 @@
+.optionWrapper {
+  padding: 5px;
+}
+
+.option {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selected {
+  composes: bg-gray from '../styles.css';
+}
+
+.hover {
+ composes: bg-silver from '../styles.css';
+}

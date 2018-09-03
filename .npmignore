@@ -1,0 +1,16 @@
+.*rc
+.eslintignore
+.editorconfig
+karma.conf.js
+tests.webpack.js
+webpack.config.*
+jsconfig.json
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+docs
+spec
+tools
+wiki
+styleguide
+docsConfig.js
+temp.css
